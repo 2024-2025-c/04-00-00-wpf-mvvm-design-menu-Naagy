@@ -73,5 +73,16 @@ namespace KretaBasicSchoolSystem.Desktop
         private void Application_Startup(object sender, StartupEventArgs e)
         {
         }
+        <Application x:Class="KretaBasicSchoolSystem.Desktop.App"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:local="clr-namespace:KretaBasicSchoolSystem.Desktop"
+            Startup="Application_Startup">
+        <Application.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary
+        Source = "/Resources/ViewModelViewDataTamplate.xaml" />
+
     }
 }
